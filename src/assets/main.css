@@ -1,0 +1,35 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+#app {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0rem 0.5rem;
+
+  font-weight: normal;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: #00a400;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    place-items: center;
+  }
+
+  #app {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
