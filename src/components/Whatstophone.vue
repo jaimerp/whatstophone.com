@@ -15,7 +15,7 @@
             <v-avatar
               size="35"
               :image="
-                'http://127.0.0.1:8000/storage/' +
+                'https://api.whatstophone.com/storage/' +
                 item.raw.code.toLowerCase() +
                 '.png'
               "
@@ -31,7 +31,7 @@
             <v-avatar
               size="35"
               :image="
-                'http://127.0.0.1:8000/storage/' +
+                'https://api.whatstophone.com/storage/' +
                 item.raw.code.toLowerCase() +
                 '.png'
               "
@@ -81,7 +81,7 @@ export default {
     };
   },
   mounted() {
-    axios.defaults.baseURL = "http://127.0.0.1:8000/api/";
+    axios.defaults.baseURL = "https://api.whatstophone.com/api/";
     //https://api.whatstophone.com/api/
 
     axios
