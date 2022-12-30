@@ -52,7 +52,7 @@
       style="font-size: 5em !important; text-align: center"
       prepend-inner-icon="mdi-phone"
       clearable
-      type="number"
+      type="tel"
       :prefix="'+' + prefixes[country.value]"
     ></v-text-field>
     <v-btn
