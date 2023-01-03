@@ -136,6 +136,7 @@ export default {
           .post("/addrequest", {
             phone: this.phone,
             zone_prefix_id: this.country.value,
+            platform: 'WEB',
           })
           .then((response) => {
             if (response.data.message == "Success") {
